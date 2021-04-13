@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="GeicoTestSuit" parallel="none" thread-count="2">
+
+    <parameter name="useCloudEnv" value="false"/>
+    <parameter name="cloudEnvName" value="browserStack"/>
+    <parameter name="OS" value="windows"/>
+    <parameter name="os_version" value="10"/>
+    <parameter name="browserName" value="chrome"/>
+    <parameter name="browserVersion" value="89"/>
+    <!--        <parameter name="browserName" value="firefox"/>-->
+    <!--        <parameter name="browserVersion" value="76.0"/>-->
+    <parameter name="url" value="https://www.geico.com/"/>
+
+
+    <test name="Geico Automation Test Script using chrome">
+        <classes>
+            <class name="autoinsurancetest.AutoInsuranceTest"/>
+            <class name="geicohomepagefootertest.PrivacyPolicyTest"/>
+            <class name="geicohomepagefootertest.NoticeAndPersonalDataRequestTest"/>
+            <class name="geicohomepagefootertest.LegalAndSecurityTest">
+<!--                <methods>-->
+<!--                    &lt;!&ndash;               Test case include or exclude&ndash;&gt;-->
+<!--                                   <exclude name=""></exclude>-->
+<!--                                   <include name=""></include>-->
+<!--                </methods>-->
+
+            </class>
+
+<!--            <class name="">-->
+<!--            <methods>-->
+<!--                &lt;!&ndash;               Test case include or exclude&ndash;&gt;-->
+<!--                <exclude name=""></exclude>-->
+<!--                <include name=""></include>-->
+<!--            </methods>-->
+<!--&lt;!&ndash;                    Add more Test classes&ndash;&gt;-->
+<!--            </class>-->
+        </classes>
+
+    </test>
+
+
+</suite>
+
+
+
+
+

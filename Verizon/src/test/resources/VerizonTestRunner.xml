@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="VerizonTestSuit" parallel="none" thread-count="2">
+    <!--    parallel="none"  Working Fine-->
+    <!--    parallel="classes"  Working Fine-->
+    <!--    parallel="tests"  Working Fine but have issue-->
+
+
+    <parameter name="useCloudEnv" value="false"/>
+    <parameter name="cloudEnvName" value="browserStack"/>
+    <parameter name="OS" value="windows"/>
+    <parameter name="os_version" value="10"/>
+    <parameter name="browserName" value="chrome"/>
+    <parameter name="browserVersion" value="89"/>
+    <!--        <parameter name="browserName" value="firefox"/>-->
+    <!--        <parameter name="browserVersion" value="76.0"/>-->
+    <parameter name="url" value="https://www.verizon.com/"/>
+
+
+    <test name="Verizon Automation Test Script using chrome">
+        <classes>
+<!--            <class name="topdevicebrandsTest.SamsungTest"/>-->
+<!--                            <class name="topdevicebrandsTest.AppleTest"/>-->
+<!--                            <class name="topdevicebrandsTest.LGTest"/>-->
+<!--                            <class name="topdevicebrandsTest.MotorolaTest"/>-->
+<!--                            <class name="topdevicebrandsTest.GoogleTest"/>-->
+<!--                            <class name="topdevicebrandsTest.AmazonTest"/>-->
+                            <class name="topdevicebrandsTest.SearchDataProviderTest">
+<!--                                <methods>-->
+<!--&lt;!&ndash;                                    <include name="appleLocatorTest"></include>&ndash;&gt;-->
+<!--&lt;!&ndash;                                    <include name="compareModelsTest"></include>&ndash;&gt;-->
+<!--&lt;!&ndash;                                    <include name="addToCartTest"></include>&ndash;&gt;-->
+<!--&lt;!&ndash;                                    <include name="motorolaPhoneSelectionTest"></include>&ndash;&gt;-->
+
+<!--                                </methods>-->
+
+            </class>
+
+
+        </classes>
+    </test>
+
+</suite>
+
+
+
+
+

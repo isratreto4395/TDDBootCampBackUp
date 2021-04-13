@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="BBCTestSuit" parallel="none" thread-count="2">
+    <parameter name="useCloudEnv" value="false"/>
+    <parameter name="cloudEnvName" value="browserStack"/>
+<!--    <parameter name="OS" value="windows"/>-->
+<!--    <parameter name="os_version" value="10"/>-->
+    <parameter name="browserName" value="chrome"/>
+    <parameter name="browserVersion" value="89"/>
+
+
+<!--        <parameter name="OS" value="OS X"/>-->
+<!--        <parameter name="os_version" value="Sierra"/>-->
+<!--        <parameter name="browserName" value="chrome"/>-->
+<!--        <parameter name="browserVersion" value="73"/>-->
+
+
+    <parameter name="url" value="https://www.bbc.com/"/>
+
+
+    <test name="BBC Automation Test Script using chrome">
+
+        <classes>
+<!--            <class name="bbctest.ReelTest"/>-->
+<!--            <class name="bbctest.RegistrationTest"/>-->
+            <class name="bbctest.RegistrationWithDataProviderTestNGTest">
+<!--            <class name="bbctest.WorklifeTest"/>-->
+<!--            <class name="bbctest.TermsOfUseTest"/>-->
+<!--            <class name="bbctest.AccessibilityHelpTest">-->
+<!--                <methods>-->
+<!--                    <exclude name="reelTabTest"/>-->
+<!--                    <exclude name="editorsPickTest"/>-->
+<!--                    <exclude name="playlistsTest"/>-->
+<!--                    <exclude name="longShotsTest"/>-->
+<!--&lt;!&ndash;                    <exclude name="registrationTest"/>&ndash;&gt;-->
+<!--                </methods>-->
+
+            </class>
+        </classes>
+    </test>
+
+</suite>
+
+
+
+
+
